@@ -52,18 +52,3 @@ This method doesn't require importing, you just copy and paste the javascript "U
 
 Go to any website and click on the bookmarklet in the bookmarks bar (or wherever you've placed it). You should get an alert
 that says "Hello World".
-
-## Releases
-
-TODO move to CONTRIBUTING.
-
-To make a new release:
-
-1. https://github.com/Robpol86/bookmarklet-template/releases
-1. Draft a new release
-1. Tag > Create new tag > `vX.X.X`
-1. Set the release title
-1. Generate release notes
-1. Publish release
-
-CI will then run and upload assets and append the bookmarklet to the release notes automatically.
