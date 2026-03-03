@@ -69,11 +69,12 @@ function injectFNameLineNo() {
 
             walk(ast, {
                 enter(node) {
-                    // Match: new Log(__FNAME_LINENO__)
+                    // Match: log.debug(__FNAME_LINENO__, ...)  or  anyVar.debug(__FNAME_LINENO__, ...)
                     if (
-                        node.type === "NewExpression" &&
-                        node.callee.name === "Log" &&
-                        node.arguments.length === 1 &&
+                        node.type === "CallExpression" &&
+                        node.callee.type === "MemberExpression" &&
+                        node.callee.property.name === "debug" &&
+                        node.arguments.length >= 1 &&
                         node.arguments[0].type === "Identifier" &&
                         node.arguments[0].name === "__FNAME_LINENO__"
                     ) {

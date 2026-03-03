@@ -6,19 +6,10 @@
  * Log messages to console with a project key and caller key.
  *
  * The user can filter log messages specific to the bookmarklet using the project key. The caller key is useful to quickly
- * pinpoint where the log message was emitted from.
+ * pinpoint where the log message was emitted from. TODO.
  */
 export class Log {
     #projectKey = "BOOKMARKLET";
-
-    /**
-     * Class constructor.
-     *
-     * @param {string} callerKey - Caller-provided key.
-     */
-    constructor(callerKey) {
-        this.callerKey = callerKey;
-    }
 
     /**
      * Log an error.
@@ -27,7 +18,7 @@ export class Log {
      * @param {...*} args - Additional arguments passed to console.error().
      */
     error(message, ...args) {
-        console.error(this.#projectKey, this.callerKey, message, ...args);
+        console.error(this.#projectKey, message, ...args);
     }
 
     /**
@@ -37,7 +28,7 @@ export class Log {
      * @param {...*} args - Additional arguments passed to console.log().
      */
     info(message, ...args) {
-        console.log(this.#projectKey, this.callerKey, message, ...args);
+        console.log(this.#projectKey, message, ...args);
     }
 
     /**
@@ -47,6 +38,6 @@ export class Log {
      * @param {...*} args - Additional arguments passed to console.debug().
      */
     debug(message, ...args) {
-        console.debug(this.#projectKey, this.callerKey, message, ...args);
+        console.debug(this.#projectKey, message, ...args);
     }
 }

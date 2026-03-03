@@ -9,12 +9,12 @@ import { main } from "./main.mjs";
  * Entrypoint function of the bookmarklet.
  */
 function entrypoint() {
-    const log = new Log(__FNAME_LINENO__);
-    log.debug("Start");
+    const log = new Log();
+    log.debug(__FNAME_LINENO__, "Start");
     try {
         return main();
     } finally {
-        log.debug("End");
+        log.debug(__FNAME_LINENO__, "End");
     }
 }
 
