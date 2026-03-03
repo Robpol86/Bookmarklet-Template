@@ -11,5 +11,6 @@ export function main() {
     const log = new Log("main()");
 
     // Show alert.
+    log.debug("Show alert");
     alert("Hello World");
 }
