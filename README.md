@@ -8,7 +8,7 @@ There are three ways to install the bookmarklet.
 
 ### Import Bookmarks HTML Method
 
-TODO screenshot
+![Screenshot](install-html.png?raw=true "Screenshot")
 
 The best way to install this bookmarklet for **Chrome** is to import the bookmarks HTML file. This way the bookmarklet will
 have a favicon. Unfortunately the favicon doesn't show in other browsers.
