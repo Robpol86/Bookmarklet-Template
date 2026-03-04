@@ -2,18 +2,18 @@
  * Entrypoint of the bookmarklet.
  */
 
-import { cDebug } from "./log.mjs";
+import { logDebug } from "./log.mjs";
 import { main } from "./main.mjs";
 
 /**
  * Entrypoint function of the bookmarklet.
  */
 function entrypoint() {
-    cDebug(__FNAME_LINENO__, "Start");
+    logDebug(__FNAME_LINENO__, "Start");
     try {
         main();
     } finally {
-        cDebug(__FNAME_LINENO__, "End");
+        logDebug(__FNAME_LINENO__, "End");
     }
 }
 
