@@ -11,7 +11,7 @@ import { main } from "./main.mjs";
 function entrypoint() {
     logDebug(__FNAME_LINENO__, "Start");
     try {
-        main();
+        return main();
     } finally {
         logDebug(__FNAME_LINENO__, "End");
     }
