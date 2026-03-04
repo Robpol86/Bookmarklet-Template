@@ -10,7 +10,7 @@ const PROJECT_KEY = "BOOKMARKLET";
  * @param {string} message - Log message.
  * @param {...*} args - Additional arguments passed to console.error().
  */
-export function error(message, ...args) {
+export function cError(message, ...args) {
     console.error(PROJECT_KEY, message, ...args);
 }
 
@@ -20,7 +20,7 @@ export function error(message, ...args) {
  * @param {string} message - Log message.
  * @param {...*} args - Additional arguments passed to console.log().
  */
-export function info(message, ...args) {
+export function cLog(message, ...args) {
     console.log(PROJECT_KEY, message, ...args);
 }
 
@@ -30,6 +30,6 @@ export function info(message, ...args) {
  * @param {string} message - Log message.
  * @param {...*} args - Additional arguments passed to console.debug().
  */
-export function debug(message, ...args) {
+export function cDebug(message, ...args) {
     console.debug(PROJECT_KEY, message, ...args);
 }
