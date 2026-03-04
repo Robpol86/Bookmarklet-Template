@@ -2,7 +2,7 @@
  * Logging functions.
  */
 
-const PROJECT_KEY = "BOOKMARKLET";
+export const PROJECT_KEY = "BOOKMARKLET";
 
 /**
  * Log an error.
