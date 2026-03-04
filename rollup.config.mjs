@@ -55,27 +55,27 @@ function teeBookmarkletHtml({ icon, label, input, output } = {}) {
 }
 
 /**
- * Rollup plugin that replaces __FNAME_LINENO__ with "filename:line" at build time.
+ * Rollup plugin that replaces a specified variable name with "filename:line_number".
  */
-function injectFNameLineNo() {
+function injectFNameLineNo(variable_name) {
     return {
-        name: "inject-caller-info",
+        name: "inject-fname-lineno",
         transform(code, id) {
-            if (!code.includes("__FNAME_LINENO__")) return null; // fast path
-            const ms = new MagicString(code);
+            if (!code.includes(variable_name)) return null; // fast path
+            const magicString = new MagicString(code);
             const filename = id.split("/").pop();
             const lines = code.split("\n");
 
             for (let i = 0; i < lines.length; i++) {
                 let col = 0;
-                while ((col = lines[i].indexOf("__FNAME_LINENO__", col)) !== -1) {
+                while ((col = lines[i].indexOf(variable_name, col)) !== -1) {
                     const start = lines.slice(0, i).join("\n").length + (i > 0 ? 1 : 0) + col;
-                    ms.overwrite(start, start + "__FNAME_LINENO__".length, JSON.stringify(`${filename}:${i + 1}`));
-                    col += "__FNAME_LINENO__".length;
+                    magicString.overwrite(start, start + variable_name.length, JSON.stringify(`${filename}:${i + 1}`));
+                    col += variable_name.length;
                 }
             }
 
-            return { code: ms.toString(), map: ms.generateMap() };
+            return { code: magicString.toString(), map: magicString.generateMap() };
         },
     };
 }
@@ -89,8 +89,8 @@ export default {
         name: "Bookmarklet",
     },
     plugins: [
-        // TODO
-        injectFNameLineNo(),
+        // Replace __FNAME_LINENO__ with "filename.mjs:123" for logging.
+        injectFNameLineNo("__FNAME_LINENO__"),
         // Adjust these settings to reduce the size of the final bookmarklet.
         terser({
             compress: {
