@@ -2,7 +2,6 @@ import MagicString from "magic-string";
 import dedent from "dedent";
 import fs from "node:fs";
 import terser from "@rollup/plugin-terser";
-import { walk } from "estree-walker";
 
 /**
  * Rollup plugin that outputs the bookmarklet as bookmarks HTML file with a favicon that the user can import.
