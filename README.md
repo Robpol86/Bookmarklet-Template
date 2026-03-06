@@ -4,7 +4,12 @@ Bookmarklet example repo with tests, multiple mjs source files, and compilation 
 
 <table>
     <tr>
-        <td><img src="used-in-chrome-macos.png" alt="Used in Chrome on macOS" /><span>Used in Chrome on macOS</span></td>
+        <td>
+            <figure>
+                <img src="used-in-chrome-macos.png" alt="Used in Chrome on macOS" />
+                <figcaption>An elephant at sunset</figcaption>
+            </figure>
+        </td>
         <td><img src="used-in-firefox-macos.png" alt="Used in Firefox on macOS" /></td>
     </tr>
     <tr>
