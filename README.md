@@ -1,8 +1,8 @@
 # ![Logo](icons/favicon.png?raw=true "Logo") Bookmarklet-Template
 
-Bookmarklet-Template is an example git repo that includes unit tests, linting, multiple testable modules (source files), and
-a compiler that compiles the various modules into a single JavaScript IIFE that can be used as the bookmarklet. This is how I
-structure all my one-off bookmarklets. In this README I'll explain my design choices with several aspects of the project.
+Bookmarklet-Template is an example git repo that includes unit tests, linting, multiple modules (source files), and a
+compiler that compiles all modules into a single JavaScript IIFE. This is how I structure all my one-off bookmarklets. In
+this README I'll explain my design choices with several aspects of the project.
 
 <table>
     <tr>
