@@ -1,4 +1,4 @@
-# ![Logo](icons/favicon.png?raw=true "Logo") Bookmarklet Template
+# ![Logo](icons/favicon.png?raw=true "Logo") Bookmarklet-Template
 
 Bookmarklet example repo with tests, multiple mjs source files, and compilation into an IIFE.
 
