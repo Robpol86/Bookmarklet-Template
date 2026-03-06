@@ -5,7 +5,7 @@ Bookmarklet example repo with tests, multiple mjs source files, and compilation 
 <table>
     <tr>
         <td>
-            <div align="center">
+            <div style="text-align: center">
                 <img src="used-in-chrome-macos.png" alt="Used in Chrome on macOS" />
                 <em>An elephant at sunset</em>
             </div>
