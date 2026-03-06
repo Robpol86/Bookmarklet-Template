@@ -4,9 +4,10 @@ Bookmarklet example repo with tests, multiple mjs source files, and compilation 
 
 <table>
     <tr>
-        <td><img src="used-in-chrome-macos.png" alt="used in chrome macos" /></td>
-        <td><img src="used-in-firefox-macos.png" alt="used in firefox macos" /></td>
-        <td><img src="used-in-safari-macos.png" alt="used in safari macos" /></td>
+        <td><img src="used-in-chrome-macos.png" alt="Used in Chrome on macOS" /></td>
+        <td><img src="used-in-firefox-macos.png" alt="Used in Firefox on macOS" /></td>
+        <td><img src="used-in-safari-macos.png" alt="Used in Safari on macOS" /></td>
+        <td><img src="used-in-edge-win11.png" alt="Used in Edge on Windows 11" /></td>
     </tr>
 </table>
 
