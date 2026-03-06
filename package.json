@@ -1,6 +1,6 @@
 {
     "name": "bookmarklet-template",
-    "description": "bookmarklet-template",
+    "description": "Bookmarklet example repo with tests, multiple mjs source files, and compilation into an IIFE.",
     "homepage": "https://github.com/Robpol86/bookmarklet-template",
     "bugs": {
         "url": "https://github.com/Robpol86/bookmarklet-template/issues"
