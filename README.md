@@ -1,6 +1,6 @@
 # ![Logo](icons/favicon.png?raw=true "Logo") Bookmarklet Template
 
-Boilerplate repo for browser bookmarklets.
+Bookmarklet example repo with tests, multiple mjs source files, and compilation into an IIFE.
 
 <table>
     <tr>
@@ -18,8 +18,8 @@ There are three ways to install the bookmarklet.
 
 ![Screenshot](install-html.png?raw=true "Screenshot")
 
-The best way to install this bookmarklet for **Chrome** is to import the bookmarks HTML file. This way the bookmarklet will
-have a favicon. Unfortunately the favicon doesn't show in other browsers.
+The best way to install this bookmarklet for **Chrome** and **Edge** is to import the bookmarks HTML file. This way the
+bookmarklet will have a favicon. Unfortunately the favicon doesn't show in other browsers.
 
 1. Download the latest `bookmarklet.html` from the [releases section](https://github.com/Robpol86/bookmarklet-template/releases)
 1. Import in Chrome:
