@@ -1,13 +1,13 @@
 {
     "name": "bookmarklet-template",
     "description": "Bookmarklet example repo with tests, multiple mjs source files, and compilation into an IIFE.",
-    "homepage": "https://github.com/Robpol86/bookmarklet-template",
+    "homepage": "https://github.com/Robpol86/Bookmarklet-Template",
     "bugs": {
-        "url": "https://github.com/Robpol86/bookmarklet-template/issues"
+        "url": "https://github.com/Robpol86/Bookmarklet-Template/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/Robpol86/bookmarklet-template.git"
+        "url": "https://github.com/Robpol86/Bookmarklet-Template.git"
     },
     "license": "BSD-2-Clause",
     "author": "Robpol86",

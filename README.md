@@ -1,6 +1,8 @@
 # ![Logo](icons/favicon.png?raw=true "Logo") Bookmarklet-Template
 
-Bookmarklet example repo with tests, multiple mjs source files, and compilation into an IIFE.
+Bookmarklet-Template is an example git repo that includes unit tests, linting, multiple testable modules (source files), and
+a compiler that compiles the various modules into a single JavaScript IIFE that can be used as the bookmarklet. This is how I
+structure all my one-off bookmarklets. In this README I'll explain my design choices with several aspects of the project.
 
 <table>
     <tr>
@@ -60,6 +62,19 @@ Bookmarklet example repo with tests, multiple mjs source files, and compilation 
         </td>
     </tr>
 </table>
+
+## Features
+
+Some features I've included in this project are:
+
+* mjs
+* tests
+* eslint
+* rollup
+* terser
+* icon in chrome
+* release
+* iife
 
 ## Install
 
