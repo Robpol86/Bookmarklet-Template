@@ -73,7 +73,7 @@ Some features I've included in this project are:
   using [Terser](https://Terser.org/) and [rollup](https://rollupjs.org/)
     * Terser also minifies the JavaScript
     * The IIFE ensures your bookmarklet code won't conflict with a webpage's code, whilst still giving you access to the
-      `document` and `window` properties
+      `document` and `window` objects
 * Tests are written for [jest](https://jestjs.io/) and [eslint](https://eslint.org/) is used for linting
 * An importable bookmarks HTML file is generated with a favicon for Chrome and Edge so users of those browsers can see an
   icon for your bookmarklet
