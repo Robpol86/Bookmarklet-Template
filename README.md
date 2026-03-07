@@ -67,14 +67,11 @@ this README I'll explain my design choices with several aspects of the project.
 
 Some features I've included in this project are:
 
-* mjs
-* tests
-* eslint
-* rollup
-* terser
-* icon in chrome
-* release
-* iife
+* The project is written in JavaScript module files (*.mjs)
+* Tests are written for [jest](https://jestjs.io/) and [eslint](https://eslint.org/) is used for linting
+* The project is "compiled" into an IIFE `javascript:...` "URL" using [terser](https://terser.org/) and [rollup](https://rollupjs.org/)
+* Compiled bookmarklets are published as regular GitHub releases in the repo with bookmarklet html and js files added as release assets
+* An importable bookmarks HTML file is generated with a favicon for Chrome and Edge
 
 ## Install
 
