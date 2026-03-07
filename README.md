@@ -103,6 +103,11 @@ Some features I've included in this project are:
 └─ rollup.config.mjs  # "Compiler" configuration
 ```
 
+## Development
+
+For more information on developing a bookmarklet using this repo as a template read the [CONTRIBUTING.md](CONTRIBUTING.md)
+document.
+
 ## Install
 
 There are three ways to install the bookmarklet.
@@ -153,7 +158,3 @@ This method doesn't require importing, you just copy and paste the javascript "U
 
 Go to any website and click on the bookmarklet in the bookmarks bar (or wherever you've placed it). You should get an alert
 that says "Hello World".
-
-## TODO
-
-* Releases moved from CONTRIBUTING to here?
