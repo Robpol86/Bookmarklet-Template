@@ -2,8 +2,7 @@
 
 Bookmarklet-Template is an example git repo that includes unit tests, linting, multiple modules (source files), and a
 compiler that compiles all modules into a single JavaScript [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE).
-This is how I structure all my one-off [bookmarklets](https://en.wikipedia.org/wiki/Bookmarklet). In this README I'll explain
-my design choices with several aspects of the project.
+This is how I structure all my one-off [bookmarklets](https://en.wikipedia.org/wiki/Bookmarklet).
 
 <table>
     <tr>
