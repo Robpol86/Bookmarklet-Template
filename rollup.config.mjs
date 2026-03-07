@@ -46,7 +46,9 @@ function teeBookmarkletHtml({ icon, label, input, output } = {}) {
             const date = Math.floor(Date.now() / 1000);
             const iconData = fs.readFileSync(icon).toString("base64");
             const iconHref = `data:image/png;base64,${iconData}`;
-            const projectUrl = process.env.GITHUB_REPOSITORY ? `https://github.com/${process.env.GITHUB_REPOSITORY}` : "";
+            const projectUrl = process.env.GITHUB_REPOSITORY
+                ? `https://github.com/${process.env.GITHUB_REPOSITORY}`
+                : "";
             const commitSha = process.env.GITHUB_SHA || "";
             const html = dedent`
                 <!DOCTYPE NETSCAPE-Bookmark-file-1>
