@@ -69,7 +69,7 @@ Some features I've included in this project are:
 
 * The project's source files are written in JavaScript module files (*.mjs)
 * The project is "compiled" into an [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) `javascript:...` "URL"
-  using [terser](https://terser.org/) and [rollup](https://rollupjs.org/)
+  using [Terser](https://Terser.org/) and [rollup](https://rollupjs.org/)
     * Terser also minifies the JavaScript
     * The IIFE ensures your bookmarklet code won't conflict with a webpage's code, whilst still giving you access to the
       `document` and `window` properties
@@ -80,6 +80,17 @@ Some features I've included in this project are:
 ## Directory Structure
 
 ```gap
+├─ src/               # All bookmarklet code goes in this directory
+│  ├─ main.mjs        # Main file to place your code in
+│  ├─ log.mjs         # Example of how to split complex code into multiple files
+│  └─ entrypoint.mjs  # Tells Terser what to include in the output bookmarklet
+│
+├─ icons/
+│  └─ favicon.png
+│
+│
+│
+│
 ├─ pypi_portal/         # All application code in this directory.
 │  ├─ core/             # Shared/misc code goes in here as packages or modules.
 │  ├─ models/
