@@ -79,7 +79,7 @@ Some features I've included in this project are:
 
 ## Directory Structure
 
-```GAP
+```gap
 ├─ pypi_portal/         # All application code in this directory.
 │  ├─ core/             # Shared/misc code goes in here as packages or modules.
 │  ├─ models/
