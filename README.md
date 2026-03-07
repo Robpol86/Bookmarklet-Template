@@ -67,11 +67,13 @@ this README I'll explain my design choices with several aspects of the project.
 
 Some features I've included in this project are:
 
-* The project is written in JavaScript module files (*.mjs)
+* The project's source files are written in JavaScript module files (*.mjs)
+* The project is "compiled" into an [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) `javascript:...` "URL"
+  using [terser](https://terser.org/) and [rollup](https://rollupjs.org/)
+    * Terser also minifies the JavaScript
 * Tests are written for [jest](https://jestjs.io/) and [eslint](https://eslint.org/) is used for linting
-* The project is "compiled" into an IIFE `javascript:...` "URL" using [terser](https://terser.org/) and [rollup](https://rollupjs.org/)
-* Compiled bookmarklets are published as regular GitHub releases in the repo with bookmarklet html and js files added as release assets
-* An importable bookmarks HTML file is generated with a favicon for Chrome and Edge
+* An importable bookmarks HTML file is generated with a favicon for Chrome and Edge so users of those browsers can see an
+  icon for your bookmarklet
 
 ## Directory Structure
 
@@ -170,3 +172,7 @@ This method doesn't require importing, you just copy and paste the javascript "U
 
 Go to any website and click on the bookmarklet in the bookmarks bar (or wherever you've placed it). You should get an alert
 that says "Hello World".
+
+## TODO
+
+* Releases moved from CONTRIBUTING to here?
