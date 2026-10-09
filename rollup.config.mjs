@@ -20,6 +20,38 @@ function injectFNameLineNo(variable_name) {
 }
 
 /**
+ * Rollup plugin that replaces a specified variable name with the project's version.
+ */
+function injectVersion(variable_name) {
+    return {
+        name: "inject-version",
+        transform(code) {
+            if (!code.includes(variable_name)) return null;
+            const version = "1.2.3"; // TODO
+            if (!version) return null;
+            const replaced = code.replaceAll(variable_name, JSON.stringify(version));
+            return { code: replaced, map: null };
+        },
+    };
+}
+
+/**
+ * Rollup plugin that replaces a specified variable name with the current HEAD git commit SHA.
+ */
+function injectCommit(variable_name) {
+    return {
+        name: "inject-commit",
+        transform(code) {
+            if (!code.includes(variable_name)) return null;
+            const commit = "aabbcc"; // TODO
+            if (!commit) return null;
+            const replaced = code.replaceAll(variable_name, JSON.stringify(commit));
+            return { code: replaced, map: null };
+        },
+    };
+}
+
+/**
  * Rollup plugin that outputs the bookmarklet as bookmarks HTML file with a favicon that the user can import.
  */
 function teeBookmarkletHtml({ icon, label, input, output } = {}) {
@@ -84,6 +116,10 @@ export default {
     plugins: [
         // Replace __FNAME_LINENO__ with "filename.mjs:123" for logging.
         injectFNameLineNo("__FNAME_LINENO__"),
+        // Replace __VERSION__ with "1.2.3" (the current version TODO).
+        injectVersion("__VERSION__"),
+        // TODO
+        injectCommit("__COMMIT__"),
         // Adjust these settings to reduce the size of the final bookmarklet.
         terser({
             compress: {

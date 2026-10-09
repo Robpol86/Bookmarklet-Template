@@ -12,7 +12,9 @@ export default defineConfig([
             globals: {
                 ...globals.browser,
                 ...globals.node,
+                __COMMIT__: "readonly",
                 __FNAME_LINENO__: "readonly",
+                __VERSION__: "readonly",
             },
         },
     },
