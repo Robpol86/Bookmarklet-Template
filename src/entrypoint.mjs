@@ -9,7 +9,7 @@ import { main } from "./main.mjs";
  * Entrypoint function of the bookmarklet.
  */
 function entrypoint() {
-    logInfo(__FNAME_LINENO__, "Start", __VERSION__, __COMMIT__);
+    logInfo(__FNAME_LINENO__, "Start", __COMMIT__);
     try {
         main();
     } finally {
