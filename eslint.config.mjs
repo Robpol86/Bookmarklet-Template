@@ -14,7 +14,6 @@ export default defineConfig([
                 ...globals.node,
                 __COMMIT__: "readonly",
                 __FNAME_LINENO__: "readonly",
-                __VERSION__: "readonly",
             },
         },
     },
